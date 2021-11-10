@@ -1,0 +1,430 @@
+{
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "freshProductInfoId",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "getProductInfoById",
+      "outputs": [
+        {
+          "name": "isActivate",
+          "type": "bool"
+        },
+        {
+          "name": "lockupTerm",
+          "type": "uint256"
+        },
+        {dd
+          "name": "VDONExchangeRate",
+          "type": "uint256"
+        },
+        {
+          "name": "totalPrincipalAmount",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "freshProductId",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "",
+          "type": "address"
+        },
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "productOf",
+      "outputs": [
+        {
+          "name": "productInfoId",
+          "type": "uint256"
+        },
+        {
+          "name": "releaseTime",
+          "type": "uint256"
+        },
+        {
+          "name": "principal",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "",
+          "type": "address"
+        },
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "allProductsIdOf",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "admin",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "minter",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "name": "mintAmount",
+          "type": "uint256"
+        }
+      ],
+      "name": "Mint",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "redeemer",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "name": "DONRedeemAmount",
+          "type": "uint256"
+        }
+      ],
+      "name": "Redeem",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "oldAdmin",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "name": "newAdmin",
+          "type": "address"
+        }
+      ],
+      "name": "UpdateAdmin",
+      "type": "event"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "DONAddress_",
+          "type": "address"
+        },
+        {
+          "name": "VDONAddress_",
+          "type": "address"
+        }
+      ],
+      "name": "initialize",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "productInfoId",
+          "type": "uint256"
+        },
+        {
+          "name": "mintAmount",
+          "type": "uint256"
+        }
+      ],
+      "name": "mint",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "redeemProductId",
+          "type": "uint256"
+        }
+      ],
+      "name": "redeem",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "isActivate_",
+          "type": "bool"
+        },
+        {
+          "name": "lockupTerm_",
+          "type": "uint256"
+        },
+        {
+          "name": "VDONExchangeRate_",
+          "type": "uint256"
+        }
+      ],
+      "name": "createProductInfo",
+      "outputs": [
+        {
+          "components": [
+            {
+              "name": "isActivate",
+              "type": "bool"
+            },
+            {
+              "name": "lockupTerm",
+              "type": "uint256"
+            },
+            {
+              "name": "VDONExchangeRate",
+              "type": "uint256"
+            },
+            {
+              "name": "totalPrincipalAmount",
+              "type": "uint256"
+            }
+          ],
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "isActivate_",
+          "type": "bool"
+        },
+        {
+          "name": "productInfoId",
+          "type": "uint256"
+        },
+        {
+          "name": "newLockupTerm",
+          "type": "uint256"
+        },
+        {
+          "name": "newVDONExchangeRate",
+          "type": "uint256"
+        }
+      ],
+      "name": "updateProductInfo",
+      "outputs": [
+        {
+          "components": [
+            {
+              "name": "isActivate",
+              "type": "bool"
+            },
+            {
+              "name": "lockupTerm",
+              "type": "uint256"
+            },
+            {
+              "name": "VDONExchangeRate",
+              "type": "uint256"
+            },
+            {
+              "name": "totalPrincipalAmount",
+              "type": "uint256"
+            }
+          ],
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "newAdmin",
+          "type": "address"
+        }
+      ],
+      "name": "setAdmin",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "account",
+          "type": "address"
+        }
+      ],
+      "name": "enteredProductOf",
+      "outputs": [
+        {
+          "components": [
+            {
+              "name": "startTime",
+              "type": "uint256"
+            },
+            {
+              "name": "releaseTime",
+              "type": "uint256"
+            },
+            {
+              "name": "principal",
+              "type": "uint256"
+            },
+            {
+              "name": "lockupTerm",
+              "type": "uint256"
+            },
+            {
+              "name": "vDONExchangeRate",
+              "type": "uint256"
+            },
+            {
+              "name": "productInfoId",
+              "type": "uint256"
+            },
+            {
+              "name": "productId",
+              "type": "uint256"
+            }
+          ],
+          "name": "",
+          "type": "tuple[]"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "productInfoList",
+      "outputs": [
+        {
+          "components": [
+            {
+              "name": "lockupTerm",
+              "type": "uint256"
+            },
+            {
+              "name": "VDONExchangeRate",
+              "type": "uint256"
+            },
+            {
+              "name": "totalPrincipalAmount",
+              "type": "uint256"
+            },
+            {
+              "name": "productInfoId",
+              "type": "uint256"
+            },
+            {
+              "name": "isActivate",
+              "type": "bool"
+            }
+          ],
+          "name": "",
+          "type": "tuple[]"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ]
+}
