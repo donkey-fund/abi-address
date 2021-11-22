@@ -765,29 +765,6 @@
       "type": "function"
     },
     {
-      "constant": true,
-      "inputs": [
-        {
-          "name": "dToken",
-          "type": "address"
-        },
-        {
-          "name": "account",
-          "type": "address"
-        }
-      ],
-      "name": "getAccountMembership",
-      "outputs": [
-        {
-          "name": "",
-          "type": "bool"
-        }
-      ],
-      "payable": false,
-      "stateMutability": "view",
-      "type": "function"
-    },
-    {
       "constant": false,
       "inputs": [
         {
@@ -947,24 +924,6 @@
           "type": "uint256"
         }
       ],
-      "payable": false,
-      "stateMutability": "nonpayable",
-      "type": "function"
-    },
-    {
-      "constant": false,
-      "inputs": [
-        {
-          "name": "dTokens",
-          "type": "address[]"
-        },
-        {
-          "name": "state",
-          "type": "bool"
-        }
-      ],
-      "name": "setProtectedAssets",
-      "outputs": [],
       "payable": false,
       "stateMutability": "nonpayable",
       "type": "function"
@@ -1348,8 +1307,8 @@
           "type": "address[]"
         },
         {
-          "name": "donkeySpeed",
-          "type": "uint256"
+          "name": "donkeySpeeds",
+          "type": "uint256[]"
         }
       ],
       "name": "_setDonkeySpeed",
@@ -1464,25 +1423,6 @@
       "type": "function"
     },
     {
-      "constant": false,
-      "inputs": [
-        {
-          "name": "newOracle",
-          "type": "address"
-        }
-      ],
-      "name": "_setPriceOracle",
-      "outputs": [
-        {
-          "name": "",
-          "type": "uint256"
-        }
-      ],
-      "payable": false,
-      "stateMutability": "nonpayable",
-      "type": "function"
-    },
-    {
       "constant": true,
       "inputs": [],
       "name": "getAllMarkets",
@@ -1554,6 +1494,25 @@
       "outputs": [],
       "payable": false,
       "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "dToken",
+          "type": "address"
+        }
+      ],
+      "name": "getLiquidationIncentiveOf",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
       "type": "function"
     }
   ]
